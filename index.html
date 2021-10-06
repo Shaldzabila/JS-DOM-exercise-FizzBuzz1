@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Program FizzBuzz! 1</h1>
+<button onclick="myFunction()">Start!</button>
+<div id="demo"></div>
+ 
+<script>
+//JS & DOM Excercise : FizzBuzz 1. Shaldzabila w/Progate Advance Bootcamp 
+function myFunction() {
+  for(let i=1;i<101;i++){
+  let hasil;
+  if(i%3==0 && i%5==0){
+  hasil="FizzBuzz!";
+  const divDemo = document.getElementById("demo");
+  divDemo.innerHTML += ` ${i} ${hasil}`;
+ }
+  else if(i%3==0){
+  hasil="Fizz!";
+  const divDemo = document.getElementById("demo");
+  divDemo.innerHTML += ` ${i} ${hasil}`;
+
+ }
+  else if(i%5==0){
+  hasil="Buzz!";
+  const divDemo = document.getElementById("demo");
+  divDemo.innerHTML += ` ${i} ${hasil}`;
+   
+ }
+  else{
+    const divDemo = document.getElementById("demo");
+    divDemo.innerHTML +=` ${i}`;
+
+  }
+    }
+  
+  }
+
+</script>
+
+</body>
+</html>
